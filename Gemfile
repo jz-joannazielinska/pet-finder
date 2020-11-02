@@ -44,8 +44,10 @@ end
 
 # app required
 
+gem 'active_model_serializers'
 gem 'devise'
 gem 'devise-jwt'
+gem 'grape'
 gem 'jwt'
 gem 'slim-rails'
 gem 'omniauth-facebook'
