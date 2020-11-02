@@ -6,10 +6,6 @@ FactoryBot.define do
     name { Faker::Creature::Cat.name }
     age { 8 }
     breed { Faker::Creature::Cat.breed }
-    after(:build) do |pet|
-        img_path = Rails.root.join('spec', 'support', 'assets', 'cat.jpg')
-        img = fixture_file_upload(img_path, 'image/png')
-        pet.images.attach(img)
-    end
+    pet_type_id { create(:pet_type).id }
   end
 end

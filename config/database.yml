@@ -11,7 +11,7 @@ development:
 
 test:
   <<: *default
-  database: <%= ENV.fetch('DB_NAME') { pet_finder_development } %>
+  database: <%= ENV.fetch('DB_NAME') { pet_finder_test } %>
   username: <%= ENV.fetch('DB_USERNAME') %>
   password:  <%= ENV.fetch('DB_PASSWORD') %>
 
