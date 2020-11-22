@@ -8,6 +8,6 @@ FactoryBot.define do
     breed { Faker::Creature::Cat.breed }
     pet_type_id { create(:pet_type).id }
     description { 'some kind of cat' }
-    sex { Faker::Gender.type }
+    gender { Faker::Gender.binary_type }
   end
 end

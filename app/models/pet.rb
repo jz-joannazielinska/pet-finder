@@ -8,4 +8,5 @@ class Pet < ApplicationRecord
 
   validates_presence_of :name, :age, :breed, :description
   validates_length_of :age, maximum: 2
+  validates :gender, presence: true, inclusion: %w(Male Female)
 end

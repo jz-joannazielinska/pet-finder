@@ -7,7 +7,7 @@ class CreatePets < ActiveRecord::Migration[6.0]
       t.integer :age, null: false
       t.string :breed, null: false
       t.string :description
-      t.string :sex
+      t.string :gender, null: false
 
       t.timestamps
     end
