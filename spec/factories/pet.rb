@@ -7,5 +7,7 @@ FactoryBot.define do
     age { 8 }
     breed { Faker::Creature::Cat.breed }
     pet_type_id { create(:pet_type).id }
+    description { 'some kind of cat' }
+    gender { Faker::Gender.binary_type }
   end
 end

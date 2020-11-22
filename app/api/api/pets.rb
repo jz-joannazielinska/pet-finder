@@ -27,6 +27,8 @@ class Pets < Grape::API
       requires :age, type: Integer, desc: 'pet age'
       requires :breed, type: String, desc: 'per breed'
       requires :pet_type, type: String, desc: 'pet type'
+      requires :gender, type: String, desc: 'pet gender'
+      optional :description, type: String, desc: 'pet description'
     end
 
     post do
@@ -38,7 +40,9 @@ class Pets < Grape::API
           name: params[:name],
           age: params[:age],
           breed: params[:breed],
-          pet_type_id: pet_type.id
+          pet_type_id: pet_type.id,
+          description: params[:description],
+          gender: params[:gender]
         }
       )
       status 200
