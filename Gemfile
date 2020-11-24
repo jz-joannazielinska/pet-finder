@@ -54,6 +54,7 @@ gem 'omniauth-facebook'
 gem 'omniauth-google-oauth2'
 gem 'omniauth-rails_csrf_protection', '~> 0.1'
 gem 'geocoder', '~> 1.6', '>= 1.6.3'
+gem 'acts-as-taggable-on', '~> 6.0'
 
 gem 'react_on_rails', '12.0.0'
 

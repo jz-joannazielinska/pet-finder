@@ -3,6 +3,7 @@
 class Pet < ApplicationRecord
 
   has_many_attached :images
+  acts_as_taggable_on :tags
 
   belongs_to :pet_type
 
