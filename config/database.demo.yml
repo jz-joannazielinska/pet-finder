@@ -5,13 +5,13 @@ default: &default
 
 development:
   <<: *default
-  database: <%= ENV.fetch('DB_NAME') { pet_finder_development } %>
+  database: <%= ENV.fetch('DB_NAME') { 'pet_finder_development' } %>
   username: <%= ENV.fetch('DB_USERNAME') %>
   password:  <%= ENV.fetch('DB_PASSWORD') %>
 
 test:
   <<: *default
-  database: <%= ENV.fetch('DB_NAME') { pet_finder_test } %>
+  database: <%= ENV.fetch('DB_NAME') { 'pet_finder_test' } %>
   username: <%= ENV.fetch('DB_USERNAME') %>
   password:  <%= ENV.fetch('DB_PASSWORD') %>
 
