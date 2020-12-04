@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'factory_bot_rails'
+
 # Generate Pets
 pet_types = ['cat', 'dog']
 pet_types.each { |type| PetType.find_or_create_by(name: type) }
