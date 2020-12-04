@@ -9,5 +9,6 @@ module PetFinderBackend
     config.generators.system_tests = nil
     config.paths.add File.join('app', 'api'), glob: File.join('**', '*.rb')
     config.autoload_paths += Dir[Rails.root.join('app', 'api', '*')]
+    config.assets.initialize_on_precompile = false
   end
 end
