@@ -12,12 +12,11 @@ gem 'turbolinks', '~> 5'
 gem 'image_processing', '~> 1.2'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'factory_bot_rails'
+  gem 'faker'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'dotenv-rails'
-  gem 'factory_bot_rails'
-  gem 'faker'
   gem 'rspec-rails'
 end
 
