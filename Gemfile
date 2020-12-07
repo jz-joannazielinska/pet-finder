@@ -11,6 +11,7 @@ gem 'webpacker', '~> 5.0'
 gem 'turbolinks', '~> 5'
 gem 'image_processing', '~> 1.2'
 gem 'bootsnap', '>= 1.1.0', require: false
+gem 'factory_bot_rails'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

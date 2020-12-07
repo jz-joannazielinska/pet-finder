@@ -7,7 +7,7 @@ class Pets < Grape::API
     desc 'Get list of all pets'
 
     get do
-      Pet.all.map{ |p| PetSerializer.new(p).as_json }
+      Pet.all.each.map{ |p| PetSerializer.new(p).as_json }
     end
   end
 
