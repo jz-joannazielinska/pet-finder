@@ -9,7 +9,7 @@ gem 'puma', '~> 3.11'
 gem 'sass-rails', '~> 5.0'
 gem 'webpacker', '~> 5.0'
 gem 'turbolinks', '~> 5'
-gem 'image_processing', '~> 1.2'
+gem 'image_processing', '~> 1.12'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'factory_bot_rails'
   gem 'faker'
